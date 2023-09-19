@@ -42,7 +42,12 @@
                             <div class="mob-logo">
                                 <a href="#"><img src="./img/mobile-logo.png" alt="mobile-logo"></a>
                             </div>
-                            <ul class="mob-list">
+                            <div class="mobile-bars">
+                                <a href="javascript:void(0)" id="mobile-bars"><i class="fa-solid fa-bars"></i></a>
+                            </div>
+                        </div>
+                        <div class="mob-blur">
+                            <ul class="mob-list-header">
                                 <li><a href="#">home</a></li>
                                 <li><a href="#">feature</a></li>
                                 <li><a href="#">services</a></li>
@@ -50,9 +55,6 @@
                                 <li><a href="#">about</a></li>
                                 <li><a href="#">contact</a></li>
                             </ul>
-                            <div class="mobile-bars">
-                                <a href="javascript:void(0)" id="mobile-bars"><i class="fa-solid fa-bars"></i></a>
-                            </div>
                         </div>
                     </div>
                     <!-- HEADER -->
@@ -98,22 +100,22 @@
                     <div class="our-service">
                         <img src="./img/on-time.png" alt="on-time">
                         <h5>on time</h5>
-                        <p>delivery on a scedule that is always on time</p>
+                        <p>delivery on a scedule that is <br> always on time</p>
                     </div>
                     <div class="our-service">
                         <img src="./img/extensive-service.png" alt="extensive-service">
                         <h5>extensive service</h5>
-                        <p>with a wide range of delivery sam to cross continents</p>
+                        <p>with a wide range of delivery sam <br> to cross continents</p>
                     </div>
                     <div class="our-service">
                         <img src="./img/security-guaranteed.png" alt="security-guaranteed">
                         <h5>security guaranteed</h5>
-                        <p>the safety of the goods during delivery is guaranteed</p>
+                        <p>the safety of the goods during <br> delivery is guaranteed</p>
                     </div>
                     <div class="our-service">
                         <img src="./img/fastest-delivery.png" alt="fastest-delivery">
                         <h5>on time</h5>
-                        <p>the fastest route for delivery goods yo local sector</p>
+                        <p>the fastest route for delivery <br> goods yo local sector</p>
                     </div>
                 </div>
             </div>
@@ -443,7 +445,7 @@
         $(document).ready(function () {
             // MOB-BAR-LIST
             $(".mobile-bars").click(function () {
-                $(".mob-list").slideToggle("slow");
+                $(".mob-list-header").slideToggle("slow");
             });
             // DESKTOP-SLICK-SLIDER
             $('.desktop-slider').slick({
